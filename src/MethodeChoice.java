@@ -7,4 +7,3 @@ public class MethodeChoice extends MathMethods{
     public static int getUserChoice() {
         return userChoice;
     }
-} // Sum methode for chosen numbers
