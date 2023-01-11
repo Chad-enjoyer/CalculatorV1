@@ -13,6 +13,7 @@ public class MathMethods {
         }
         return sumNumbers;
     }
+} // Sum methode for chosen numbers
     public static double multiplication(int a, int b) {
         double multiplication = Massive.getNumbersStorage()[a];
         for (int c = a; c < b; c++) {
@@ -33,5 +34,5 @@ public class MathMethods {
             divider /= Massive.getNumbersStorage()[c + 1];
         }
         return divider;
-    } // Dividing methode for chosen numbers
+    } // Divide methode for chosen numbers
 }
