@@ -1,15 +1,16 @@
 public class NumbersRange extends MathMethods{
     public static void takeRange() {
         System.out.println("Введите диапазон чисел (первое значение имеет индекс 0");
-        if (MethodeChoice.getUserChoice() == SUM) {
+        var choise = MethodeChoice.getUserChoice();
+        if (choise == SUM) {
             int result;
             int result1;
             while (true) {
                 try {
                     String userInput = sc.nextLine();
-                    result = Integer.parseInt(userInput);
+                    result = Integer.parseInt(userInput); // ????
                     String userInput1 = sc.nextLine();
-                    result1 = Integer.parseInt(userInput1);
+                    result1 = Integer.parseInt(userInput1); // ??????
                     if (result < 0) {
                         continue;
                     }
@@ -30,7 +31,7 @@ public class NumbersRange extends MathMethods{
         }
         if (MethodeChoice.getUserChoice() == MULTIPLICATION) {
             int result;
-            int result1;
+            int result1; // DRY???
             while (true) {
                 try {
                     String userInput = sc.nextLine();
